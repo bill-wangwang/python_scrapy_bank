@@ -64,12 +64,13 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'bank.pipelines.BankTypePipeline': 1,
+    'bank.pipelines.BankTypePipeline': 1,
     # 'bank.pipelines.AreaPipeline': 2,
-    'bank.pipelines.AreaPipeline': 3,
+    # 'bank.pipelines.AreaPipeline': 3,
+    # 'bank.pipelines.BankPipeline': 4,
 }
-# LOG_FILE = 'log.txt'
-# LOG_LEVEL = 'INFO'
+LOG_FILE = 'log.txt'
+LOG_LEVEL = 'ERROR'
 
 
 # Enable and configure the AutoThrottle extension (disabled by default)
